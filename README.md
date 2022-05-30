@@ -5,4 +5,4 @@ Minimalist, fully responsive portfolio made with React.
 
 This is a `work in progress`.
 
-![image](https://user-images.githubusercontent.com/52317197/171036084-bd473498-af53-4f5f-a388-eb25d4fb647f.png)
+![image_2022-05-30_19-12-03](https://user-images.githubusercontent.com/52317197/171036769-c0e73eb5-ea5d-4e37-a66e-30bc46c72e3f.png)
