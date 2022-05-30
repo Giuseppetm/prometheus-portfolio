@@ -1,11 +1,16 @@
 @import "../node_modules/mouse-follower/src/scss/index.scss";
+@import "./Styles/Responsive.scss";
+@import "./Views/Footer.scss";
 
+/* Variables (color palette and other stuff) */
 $text-color: #373737;
 $grey-color: #ACACAC;
 $bg-color: #E3E2E2;
 $accent-color: #D64A4A;
 
+/* Basic styles */
 body {
+  min-height: 100vh;
   color: $text-color;
   background-color: $bg-color;
   margin: 0;
@@ -15,6 +20,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  min-height: 100vh;
+/* TODO: sections must have a default margin-right for lateral-menu space; remove it for mobile displays */
+section {
 }
