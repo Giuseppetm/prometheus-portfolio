@@ -1,0 +1,29 @@
+header {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        justify-content: end;
+    }
+
+    .site-name {
+        font-family: 'Futura PT';
+        letter-spacing: 1px;
+        font-weight: 900;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: rgba($text-color, 0.6);
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}

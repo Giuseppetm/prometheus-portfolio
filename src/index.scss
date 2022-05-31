@@ -1,27 +1,84 @@
 @import "../node_modules/mouse-follower/src/scss/index.scss";
+@import "./Fonts/Futura/stylesheet.css";
+@import "./Fonts/Prompt/stylesheet.css";
+@import "./Styles/Variables.scss";
 @import "./Styles/Responsive.scss";
 @import "./Views/Footer.scss";
-
-/* Variables (color palette and other stuff) */
-$text-color: #373737;
-$grey-color: #ACACAC;
-$bg-color: #E3E2E2;
-$accent-color: #D64A4A;
+@import "./Components/Header.scss";
 
 /* Basic styles */
 body {
   min-height: 100vh;
-  color: $text-color;
-  background-color: $bg-color;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* TODO: sections must have a default margin-right for lateral-menu space; remove it for mobile displays */
+/* TODO: sections must have a default margin-right for lateral-menu space; remove it for mobile displays - Padding stuff for LG, SM etc. */
 section {
+  margin-left: 90px;
+  margin-right: 160px;
+}
+
+/* TODO: Da settare una vmin per la grandezza minima del font, altrimenti da mobile non si vede */
+h1, h2, h3, h4, h5 { 
+  font-family: 'Futura PT'; 
+  transition: all 0.3s ease-in-out; 
+  margin: 0;
+}
+
+h1 { 
+  font-size: 7.5vw; 
+}
+
+a {
+  color: $accent-color;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $grey-color;
+  }
+}
+
+.outlined {
+  color: transparent;
+  text-shadow: none;
+  -webkit-text-stroke: 2px $text-color;
+
+  &:hover {
+    cursor: pointer;
+    color: $text-color;
+    text-shadow:beige;
+    -webkit-text-stroke: 2px transparent;
+  }
+}
+
+.box {
+  border: 1px solid $grey-color;
+  padding: 40px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+  padding: 15px 35px;
+  border: 1px solid $grey-color;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($grey-color, 0.35);
+    color: rgba($text-color, 0.85);
+  }
 }
