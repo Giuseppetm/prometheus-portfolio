@@ -8,7 +8,11 @@ import './index.scss';
 MouseFollower.registerGSAP(gsap);
 
 // eslint-disable-next-line no-unused-vars
-const cursor = new MouseFollower();
+const cursor = new MouseFollower({
+  stateDetection: {
+    '-pointer': 'a,button'
+  }
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

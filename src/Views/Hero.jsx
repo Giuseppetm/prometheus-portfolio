@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="content">
-                <h1 className="outlined">GIUSEPPE DEL CAMPO</h1>
+                <h1 className="outlined" data-cursor-text="Hello there!">GIUSEPPE DEL CAMPO</h1>
 
                 <div className="box">
                     <p>I'm a 22 years old .NET Developer, currently working at <a href="#1">@Egeatech SRL</a>.</p>
@@ -16,7 +16,7 @@ const Hero = () => {
                     <p>As hobbies I really enjoy working out and playing piano and guitar.</p>
                 </div>
 
-                <div className="button">
+                <div className="button" data-cursor-text="Click me">
                     Tell me more <MdArrowDownward />
                 </div>
             </div>

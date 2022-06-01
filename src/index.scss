@@ -3,6 +3,7 @@
 @import "./Fonts/Prompt/stylesheet.css";
 @import "./Styles/Variables.scss";
 @import "./Styles/Responsive.scss";
+@import "./Views/Hero.scss";
 @import "./Views/Footer.scss";
 @import "./Components/Header.scss";
 
@@ -23,6 +24,10 @@ body {
 section {
   margin-left: 90px;
   margin-right: 160px;
+}
+
+.mf-cursor {
+  color: $grey-color;
 }
 
 /* TODO: Da settare una vmin per la grandezza minima del font, altrimenti da mobile non si vede */
@@ -56,7 +61,6 @@ a {
   &:hover {
     cursor: pointer;
     color: $text-color;
-    text-shadow:beige;
     -webkit-text-stroke: 2px transparent;
   }
 }
