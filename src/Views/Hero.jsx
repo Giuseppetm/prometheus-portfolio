@@ -1,11 +1,10 @@
-import './Hero.scss';
 import { MdArrowDownward } from "react-icons/md"; 
 
 const Hero = () => {
     return (
         <section className="hero">
             <div className="content">
-                <h1 className="outlined" data-cursor-text="Hello there!">GIUSEPPE DEL CAMPO</h1>
+                <h1 className="outlined" data-cursor-text="Hello there!">GIUSEPPE <br className="show-br"/>DEL CAMPO</h1>
 
                 <div className="box">
                     <p>I'm a 22 years old .NET Developer, currently working at <a href="#1">@Egeatech SRL</a>.</p>

@@ -1,13 +1,28 @@
 .hero {
-    $grey-color: #ACACAC;
     min-height: 100vh;
     display: flex;
     align-items: center;
 
     h1 {
-        margin-left: -102px;
         letter-spacing: 6px;
-        width: 95vw;
+
+        @include xs {
+            margin-left: -15px;
+            width: 100vw;
+        }
+        
+        @include sm {
+            margin-left: -27px;
+        }
+        
+        @include md {
+            margin-left: -38px;
+            width: 95vw;
+        }
+        
+        @include lg {
+            margin-left: -102px;
+        }
     }
 
     .content {
@@ -23,5 +38,13 @@
 
     .button {
         margin-left: 40px;
+    }
+
+    .show-br { display: none; }
+
+    @include smaller(510px) {
+        .show-br { display: block; }
+
+        h1 { margin-bottom: 20px; }
     }
 }

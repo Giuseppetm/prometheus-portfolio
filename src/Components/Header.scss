@@ -1,14 +1,21 @@
 header {
     position: absolute;
     top: 50px;
-    right: 80px;
+
+    @include xs {
+        right: 30px;
+    }
+
+    @include md {
+        right: 80px;
+    }
 
     .content {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 30px;
-        justify-content: end;
+        gap: 15px;
+        justify-content: flex-end;
     }
 
     .site-name {
@@ -31,6 +38,14 @@ header {
         display: flex;
         align-items: center;
         color: $text-color;
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 10px;
+
+        &:hover {
+            color: rgba($accent-color, 0.9);
+            background-color: rgba($text-color, 0.1);
+        }
     }
 
     svg {

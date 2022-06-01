@@ -1,7 +1,16 @@
+/* Screen sizes (XS, SM, MD, LG, XL) */
+$screen-xs-min: 320px;
 $screen-sm-min: 576px;
-$screen-md-min: 768px;
+$screen-md-min: 769px;
 $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
+
+/* Extra-small devices */
+@mixin xs {
+   @media (min-width: #{$screen-xs-min}) {
+       @content;
+   }
+}
 
 /* Small devices */
 @mixin sm {
@@ -33,13 +42,32 @@ $screen-xl-min: 1200px;
 
 /* Custom devices */
 @mixin bigger($screen) {
-   @media (min-width: $screen + 'px') {
+   @media (min-width: #{$screen}) {
        @content;
    }
 }
 
 @mixin smaller($screen) {
-   @media (max-width: $screen + 'px') {
-       @content;
-   }
+    @media (max-width: #{$screen}) {
+        @content;
+    }
+}
+
+@mixin between($min, $max) {
+    $min: $min + 'px';
+    $max: $max + 'px';
+    @media (max-width: $max) and (min-width: $min) {
+        @content;
+    }
+}
+
+/* Desktop and mobile generic classes for showing header hamburger and other stuff */
+@include xs {
+  .desktop { display: none; } 
+  .mobile { display: block; }
+}
+
+@include sm {
+  .desktop { display: block; }
+  .mobile { display: none; }
 }
