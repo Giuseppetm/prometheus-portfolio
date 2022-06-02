@@ -5,28 +5,31 @@ import { useState } from "react";
 
 const Header = () => {
     let [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    // TODO: Sidebar
 
     return (
         <header>
             <div className="desktop">
                 <div className="content">
-                    <a href="#1" data-cursor-stick="#stick-icon-1" id="stick-icon-1">
+                    <a href="https://letterboxd.com/Giuseppetm/" data-cursor-stick="#stick-icon-1" id="stick-icon-1">
                         <MdOutlineMovie />
                     </a>
-                    <a href="#1" data-cursor-stick="#stick-icon-2" id="stick-icon-2">
+                    <a href="https://www.youtube.com/channel/UC48YylNs29E-9-EgA_0noFw" data-cursor-stick="#stick-icon-2" id="stick-icon-2">
                         <AiFillYoutube />
                     </a>
-                    <a href="#2" data-cursor-stick="#stick-icon-3" id="stick-icon-3">
+                    <a href="https://www.linkedin.com/in/giuseppe-del-campo/" data-cursor-stick="#stick-icon-3" id="stick-icon-3">
                         <AiFillLinkedin />
                     </a>
-                    <a href="#3" data-cursor-stick="#stick-icon-4" id="stick-icon-4">
+                    <a href="mailto:giuseppe.delcampo@outlook.com" data-cursor-stick="#stick-icon-4" id="stick-icon-4">
                         <MdOutlineMail />
                     </a>
-                    <a href="#4" data-cursor-stick="#stick-icon-5" id="stick-icon-5">
+                    <a href="https://github.com/Giuseppetm" data-cursor-stick="#stick-icon-5" id="stick-icon-5">
                         <VscGithub />
                     </a>
                     <div>
-                        <p className="site-name">GIUSEPPE DEL CAMPO</p>
+                        <a href="https://giuseppedelcampo.netlify.app" className="site-name">
+                            <p>GIUSEPPE DEL CAMPO</p>
+                        </a>
                     </div>
                 </div>
             </div>

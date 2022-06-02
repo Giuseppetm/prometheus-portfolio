@@ -1,8 +1,10 @@
 
 
-const LateralMenu = () => {
+const LateralMenu = (props) => {
+    console.log(props.section);
+
     return (
-        <div style={{ position: "fixed" }}>
+        <div className="lateral-menu">
         </div>
     )
 };

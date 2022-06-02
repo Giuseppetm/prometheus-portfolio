@@ -23,10 +23,13 @@ header {
         letter-spacing: 1px;
         font-weight: 900;
         transition: all 0.2s ease-in-out;
+        text-decoration: none;
 
         &:hover {
             color: rgba($text-color, 0.6);
             cursor: pointer;
+            background-color: transparent;
+            text-decoration: none;
         }
     }
 

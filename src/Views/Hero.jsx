@@ -12,7 +12,7 @@ const Hero = () => {
                     <p>I studied computer science at the University of Milan, where I later worked as <a href="#1">Smart Bear</a> Front-end Developer.<br/>
                     In the last year I have developed a website for one of the largest university networks in Italy, that is <a href="#1">studentiunimi.it</a></p>
 
-                    <p>As hobbies I really enjoy working out and playing piano and guitar.</p>
+                    <p>As hobbies I really enjoy working out, watching <a href="#1">movies</a>, editing some <a href="#1">videos</a> and playing piano and guitar.</p>
                 </div>
 
                 <div className="button" data-cursor-text="Click me">
