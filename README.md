@@ -6,4 +6,4 @@ Minimalist, fully responsive portfolio made with React.
 
 This is a `work in progress`. 🎦 [LIVE PREVIEW](https://giuseppedelcampo.netlify.app/)
 
-![image](https://user-images.githubusercontent.com/52317197/171939885-86925bae-d33f-4404-ae32-77db2d382e71.png)
+![Preview](https://user-images.githubusercontent.com/52317197/171942881-61dc0867-6500-41b3-8949-63152980aaff.jpeg)
