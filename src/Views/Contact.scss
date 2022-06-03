@@ -1,4 +1,21 @@
 .contact {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: $text-color;
+        width: fit-content;
 
+        &:hover {
+            text-decoration: none;
+        }
+    }
 
+    .button {
+        width: fit-content;
+
+        @include smaller(360px) {
+            font-size: 4vw;
+            gap: 15px;
+        }
+    }
 }

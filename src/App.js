@@ -13,10 +13,10 @@ const App = () => {
     var projects = document.getElementById("projects");
     var contact = document.getElementById("contact");
 
-    if (window.scrollY > projects.offsetTop) {
-      setSection(2);
-    } else if (window.scrollY > contact.offsetTop) {
+    if (window.scrollY > contact.offsetTop - 400) {
       setSection(3);
+    } else if (window.scrollY > projects.offsetTop - 400) {
+      setSection(2);
     } else {
       setSection(1);
     }

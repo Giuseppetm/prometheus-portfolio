@@ -1,4 +1,4 @@
-
+import { MdOutlineEast } from "react-icons/md"; 
 
 const Contact = () => {
     return (
@@ -9,7 +9,12 @@ const Contact = () => {
             </div>
 
             <div className="box">
-                
+                <p>Would you like to talk with me?</p>
+                <a href="mailto:giuseppe.delcampo@outlook.com">
+                    <div className="button" data-cursor-text="Send email">
+                        Send me an e-mail <MdOutlineEast />
+                    </div>
+                </a>
             </div>
         </section>
     )

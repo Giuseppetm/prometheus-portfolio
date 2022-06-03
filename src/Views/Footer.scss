@@ -1,4 +1,119 @@
 footer {
+    padding: 120px 0px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
     color: $bg-color;
     background-color: $text-color;
+    z-index: 1;
+
+    .container {
+        width: 100%;
+        margin: 0px 60px;
+
+        @include smaller(768px) {
+            margin: 0px 20px;
+        }
+    }
+
+    .first-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h3 {
+            color: $text-secondary-color;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+            transition: 0.3s ease; 
+    
+            &:hover {
+                cursor: pointer;
+                color: rgba($text-secondary-color, 0.7);
+            }
+        }
+
+        .button {
+            color: $text-secondary-color;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+    
+            &:hover {
+                color: rgba($text-secondary-color, 0.7);
+            }
+
+            @include smaller(768px) {
+                display: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .link {
+            display: inline-block;
+            text-decoration: none;
+            color: $bg-color;
+
+            &:hover {
+                text-decoration: underline;
+                color: $accent-color;
+            }
+
+            p { margin: 0; }
+        }
+
+        @include smaller(768px) {
+            text-align: center;
+
+            h3 { margin-bottom: 20px; }
+        }
+    }
+
+    .second-content {
+        .icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            justify-content: flex-start;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            color: $text-secondary-color;
+            background-color: transparent;
+            border-radius: 50%;
+            padding: 10px;
+
+            &:hover {
+                background-color: rgba($bg-color, 0.2);
+            }
+        }
+
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+
+        .creator {
+            font-family: 'Futura PT';
+            letter-spacing: 1px;
+            font-weight: 900;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        }
+    }
+
+
 }

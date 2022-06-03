@@ -10,7 +10,7 @@
 
         @include xs {
             margin-left: -14px;
-            width: 100vw;
+            width: 95vw;
         }
         
         @include sm {
@@ -19,7 +19,6 @@
         
         @include md {
             margin-left: -38px;
-            width: 95vw;
         }
         
         @include lg {
@@ -48,5 +47,9 @@
         .show-br { display: block; }
 
         h1 { margin-bottom: 10px; }
+    }
+
+    a {
+        display: contents;
     }
 }

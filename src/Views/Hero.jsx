@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { MdArrowDownward } from "react-icons/md"; 
 
 const Hero = () => {
@@ -15,9 +16,11 @@ const Hero = () => {
                     <p>As hobbies I really enjoy working out, watching <a href="https://letterboxd.com/Giuseppetm/">movies</a>, editing some <a href="https://www.youtube.com/playlist?list=PL2s4PBjZpyrcUC9LUa9RBzcNA0mcD2VN_">videos</a> and playing piano and guitar.</p>
                 </div>
 
-                <div className="button" data-cursor-text="Click me">
-                    Tell me more <MdArrowDownward />
-                </div>
+                <Link to={"projects"} smooth={true} duration={500} className="link-button">
+                    <div className="button" data-cursor-text="Click me">
+                        Tell me more <MdArrowDownward />
+                    </div>
+                </Link>
             </div>
         </section>
     )
