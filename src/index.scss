@@ -75,7 +75,7 @@ p {
 a {
   color: $accent-color;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 
   &:hover {
     cursor: pointer;
@@ -118,6 +118,7 @@ a {
   align-items: center;
   width: fit-content;
   border-bottom: 1px solid $grey-color;
+  margin-bottom: 40px;
 
   h2 { 
     font-weight: 300; 

@@ -7,6 +7,10 @@ const Contact = () => {
                 <h3>02</h3>
                 <h2 data-cursor-text="Contact me">GET IN TOUCH</h2>
             </div>
+
+            <div className="box">
+                
+            </div>
         </section>
     )
 };

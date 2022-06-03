@@ -40,5 +40,6 @@
         border: 1px solid #b0afaf;
         background-color: rgba($grey-color, 0.5);
         transform: rotate(45deg);
+        transition: all 0.2s ease;
     }
 }
