@@ -13,7 +13,7 @@ const Projects = () => {
                 {
                     ProjectsData.map((x,i) => {
                         return (
-                            <Col xs={12} sm={6} md={4} lg={3} xxl={3} key={i}>
+                            <Col xs={12} sm={6} md={6} lg={4} xxl={3} key={i}>
                                 <a href={x.url ?? x.repo}>
                                     <div className="project" key={i} data-cursor-img={require(`../Images/${x.img}`)}>
                                         <p>{x.title}</p>

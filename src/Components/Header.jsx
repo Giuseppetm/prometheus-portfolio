@@ -1,11 +1,12 @@
+import Fade from 'react-reveal/Fade';
 import { VscGithub } from "react-icons/vsc";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { MdOutlineMail, MdOutlineMovie, MdSegment, MdClose } from "react-icons/md";
+import { Link } from 'react-scroll';
 import { useState } from "react";
 
 const Header = () => {
     let [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    // TODO: Sidebar
 
     return (
         <header>
@@ -37,6 +38,27 @@ const Header = () => {
             <div className="mobile">
                 <div className="content">
                     {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} /> }
+                </div>
+
+                <div style={{ display: isSidebarOpen ? 'block' : 'none' }} className="sidebar">
+                    <Fade right duration={400} distance="30px">
+                        <div className="sidebar-backdrop" />
+                        <div className="sidebar-content">
+                            <div className="header">
+                                {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} />}
+                            </div>
+                            <div className="menu-container">
+                                <div className="menu-title">Menu</div>
+                                <div className="menu-item"><Link to="hero" smooth duration={500} onClick={() => setIsSidebarOpen(false)}>Homepage</Link></div>
+                                <div className="menu-item"><Link to="projects" smooth duration={500} onClick={() => setIsSidebarOpen(false)}>Projects</Link></div>
+                                <div className="menu-item"><Link to="contact" smooth duration={500} onClick={() => setIsSidebarOpen(false)}>Get in touch</Link></div>
+                            </div>
+                            <div className="menu-container" style={{ marginTop: 30 }}>
+                                <div className="menu-title">Contact</div>
+                                <div><a href="mailto:giuseppe.delcampo@outlook.com">giuseppe.delcampo@outlook.com</a></div>
+                            </div>
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </header>

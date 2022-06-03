@@ -16,7 +16,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <Link to={"hero"} smooth={true} duration={500} className="link-button">
-                        <div className="button" data-cursor-text="Go back">
+                        <div className="button" data-cursor-text="Go top">
                             <MdArrowUpward />
                         </div>
                     </Link>
@@ -24,7 +24,7 @@ const Footer = () => {
 
                 <div className="second-content">
                     <div className="box">
-                        <p style={{ marginBottom: 10}}>Website made with React by <a className="creator" href="https://github.com/Giuseppetm">GIUSEPPE DEL CAMPO</a></p>
+                        <p style={{ marginBottom: 10}}>Website made with React by <br className="show-br" /><a className="creator" href="https://github.com/Giuseppetm">GIUSEPPE DEL CAMPO</a></p>
                         <p style={{ marginTop: 0}}>You can find me here:</p>
 
                         <div className="icons">

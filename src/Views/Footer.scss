@@ -14,6 +14,10 @@ footer {
         @include smaller(768px) {
             margin: 0px 20px;
         }
+
+        @include smaller(376px) {
+            margin: 0px 10px;
+        }
     }
 
     .first-content {
@@ -32,6 +36,10 @@ footer {
                 cursor: pointer;
                 color: rgba($text-secondary-color, 0.7);
             }
+
+            @include xs { font-size: 7.5vmin; }
+            @include sm { font-size: 4vw; }
+            @include md { font-size: 3vw; }
         }
 
         .button {
@@ -68,6 +76,7 @@ footer {
 
         @include smaller(768px) {
             text-align: center;
+            display: block;
 
             h3 { margin-bottom: 20px; }
         }
@@ -80,6 +89,14 @@ footer {
             align-items: center;
             gap: 15px;
             justify-content: flex-start;
+
+            @include smaller(768px) {
+                justify-content: center;
+            }
+
+            @include smaller(376px) {
+                gap: 5px;
+            }
         }
 
         .icon {
@@ -111,6 +128,18 @@ footer {
                 cursor: pointer;
                 background-color: transparent;
                 text-decoration: none;
+            }
+        }
+
+        .show-br { display: none; }
+
+        @include smaller(512px) {
+            .show-br { display: block; }
+        }
+
+        .box {
+            @include smaller(768px) {
+                text-align: center;
             }
         }
     }

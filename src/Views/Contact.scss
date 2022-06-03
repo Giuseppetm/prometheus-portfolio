@@ -1,4 +1,10 @@
 .contact {
+    .section-header h2 {
+        @include smaller(468px) {
+            font-size: 8.5vmin;
+        }
+    }
+
     a {
         display: inline-block;
         text-decoration: none;
