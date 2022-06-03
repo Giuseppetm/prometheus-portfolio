@@ -10,7 +10,7 @@ MouseFollower.registerGSAP(gsap);
 // eslint-disable-next-line no-unused-vars
 const cursor = new MouseFollower({
   stateDetection: {
-    '-pointer': 'a,button'
+    '-pointer': 'a,button,.square'
   }
 });
 

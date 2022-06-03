@@ -44,7 +44,7 @@
 
     .show-br { display: none; }
 
-    @include smaller(510px) {
+    @include smaller(575px) {
         .show-br { display: block; }
 
         h1 { margin-bottom: 10px; }

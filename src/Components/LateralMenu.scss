@@ -2,20 +2,43 @@
     position: fixed;
     right: 0px;
     top: 50%;
-    /* TODO: The width must be calculated by 100% - the margin of section. Maybe the margin right can be a variable?  */
-    width: 100px;
-    height: 50px;
-    background-color: $grey-color;
-
-    display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
 
     @include xs {
         display: none;
     }
 
     @include md {
-        display: block;
+        display: flex;
+        width: $section-mr-md;
+    }
+
+    @include lg {
+        width: $section-mr-lg;
+    }
+
+    .square {
+        width: 16px;
+        height: 16px;
+        border: 1px solid $text-color;
+        background-color: transparent;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: rotate(45deg);
+            background-color: rgba($grey-color, 0.5);
+            border: 1px solid #b0afaf;
+            cursor: pointer;
+        }
+    }
+
+    .active-square {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b0afaf;
+        background-color: rgba($grey-color, 0.5);
+        transform: rotate(45deg);
     }
 }
