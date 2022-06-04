@@ -4,10 +4,19 @@ import Projects from "./Views/Projects";
 import Footer from "./Views/Footer";
 import Header from "./Components/Header";
 import LateralMenu from "./Components/LateralMenu";
+import PreCacheImg from 'react-precache-img';
 import { useState, useEffect } from "react";
+
+const importAll = (r) => {
+  let images = {};
+  // eslint-disable-next-line array-callback-return
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+};
 
 const App = () => {
   let [section, setSection] = useState(1);
+  const images = importAll(require.context('./Images/', false, /\.(png|jpe?g|svg)$/));
 
   const handleScroll = () => {
     var projects = document.getElementById("projects");
@@ -28,6 +37,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <PreCacheImg images={Object.values(images)} />
       <Header />
       <LateralMenu section={section} />
       <Hero />
