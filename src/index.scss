@@ -46,7 +46,12 @@ section {
   }
 }
 
-.mf-cursor { color: $grey-color; }
+.mf-cursor { 
+  color: $grey-color; 
+
+  @include xs { display: none; }
+  @include md { display: block; }
+}
 
 h1, h2, h3, h4, h5 { font-family: 'Futura PT'; margin: 0; }
 

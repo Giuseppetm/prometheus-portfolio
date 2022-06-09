@@ -1,12 +1,12 @@
 import Fade from 'react-reveal/Fade';
+import { useScrollLock } from '@mantine/hooks';
 import { VscGithub } from "react-icons/vsc";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { MdOutlineMail, MdOutlineMovie, MdSegment, MdClose } from "react-icons/md";
 import { Link } from 'react-scroll';
-import { useState } from "react";
 
 const Header = () => {
-    let [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    let [isSidebarOpen, setIsSidebarOpen] = useScrollLock(false);
 
     return (
         <header>
