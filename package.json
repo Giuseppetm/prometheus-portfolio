@@ -11,7 +11,7 @@
     "mouse-follower": "^1.0.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-grid-system": "^8.1.5",
+    "react-flexbox-grid": "^2.1.2",
     "react-icons": "^4.4.0",
     "react-precache-img": "^2.0.5",
     "react-reveal": "^1.2.2",
