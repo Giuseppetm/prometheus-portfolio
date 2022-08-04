@@ -67,9 +67,9 @@ h2 {
 }
 
 h3 {
-  @include xs { font-size: 8.5vmin; }
-  @include sm { font-size: 5.5vw; }
-  @include md { font-size: 3.5vw; }
+  @include xs { font-size: 8vmin; }
+  @include sm { font-size: 5vw; }
+  @include md { font-size: 3vw; }
 }
 
 p {
@@ -104,17 +104,12 @@ a {
 
 .box {
   border: 1px solid $grey-color;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: 1px;
   
-  @include xs {
-    padding: 20px 30px;
-  }
-
-  @include sm {
-  }
-
-  @include md {
-    padding: 30px 40px;
-  }
+  @include xs { padding: 20px 30px; }
+  @include sm {}
+  @include md {padding: 30px 40px; }
 }
 
 .section-header {
@@ -142,7 +137,7 @@ a {
     transition: all 0.3s ease; 
 
     @include xs { margin-bottom: 4px; }
-    @include md { margin-bottom: 8px; }
+    @include md { margin-bottom: 10px; }
 
     &:hover {
       cursor: default;
@@ -180,6 +175,8 @@ a {
   padding: 15px 35px;
   border: 1px solid $grey-color;
   transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: 1px;
 
   &:hover {
     cursor: pointer;

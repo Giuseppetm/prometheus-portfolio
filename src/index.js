@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import App from './App';
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
+import { hydrate, render } from "react-dom";
 import './index.scss';
 
 MouseFollower.registerGSAP(gsap);
@@ -14,10 +14,10 @@ const cursor = new MouseFollower({
   }
 });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById("root");
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}

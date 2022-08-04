@@ -10,6 +10,12 @@ header {
         right: 80px;
     }
 
+    .header-button {
+        position: absolute;
+        z-index: 4;
+        right: 0px;
+    }
+
     .content {
         display: flex;
         flex-direction: row;
@@ -57,13 +63,6 @@ header {
     }
 
     .sidebar {
-        .header {
-            z-index: 3;
-            position: absolute;
-            top: 50px;
-            right: 30px;
-        }
-
         .sidebar-backdrop {
             position: fixed;
             top: 0;

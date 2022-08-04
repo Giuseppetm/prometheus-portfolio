@@ -36,7 +36,7 @@ const Header = () => {
             </div>
 
             <div className="mobile">
-                <div className="content">
+                <div className="content header-button">
                     {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} /> }
                 </div>
 
@@ -44,9 +44,6 @@ const Header = () => {
                     <Fade right duration={400} distance="30px">
                         <div className="sidebar-backdrop" />
                         <div className="sidebar-content">
-                            <div className="header">
-                                {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} />}
-                            </div>
                             <div className="menu-container">
                                 <div className="menu-title">Menu</div>
                                 <div className="menu-item"><Link to="hero" smooth duration={500} onClick={() => setIsSidebarOpen(false)}>Homepage</Link></div>
