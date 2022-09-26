@@ -7,18 +7,18 @@ const Projects = [
         repo: "https://github.com/StudentiUnimi/website"
     },
     {
-        img: "prometheus.png",
-        title: "Prometheus template",
-        info: '',
-        url: "https://giuseppedelcampo.netlify.app/",
-        repo: "https://github.com/Giuseppetm/prometheus-portfolio"
-    },
-    {
         img: "syndrome_main_computer.png",
         title: "Kronos Unveiled",
         info: 'Reproduction from "The Incredibles" movie (2004).',
         url: "https://syndromemaincomputer.netlify.app/",
         repo: "https://github.com/Giuseppetm/syndrome_main_computer"
+    },
+    {
+        img: "prometheus.png",
+        title: "Prometheus template",
+        info: '',
+        url: "https://giuseppedelcampo.netlify.app/",
+        repo: "https://github.com/Giuseppetm/prometheus-portfolio"
     },
     {
         img: "elegalio.png",
