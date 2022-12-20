@@ -15,7 +15,7 @@ const Footer = () => {
                             <p>Did you know that this font called "Futura" was used in "2001 A Space Odyssey"?</p>
                         </a>
                     </div>
-                    <Link to={"hero"} smooth={true} duration={500} className="link-button">
+                    <Link to={"hero"} smooth={true} duration={500}>
                         <div className="button" data-cursor-text="Go top">
                             <MdArrowUpward />
                         </div>

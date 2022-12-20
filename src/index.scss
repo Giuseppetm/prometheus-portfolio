@@ -1,6 +1,6 @@
 @import "../node_modules/mouse-follower/src/scss/index.scss";
 @import "./Fonts/Futura/stylesheet.css";
-@import "./Fonts/Prompt/stylesheet.css";
+@import "./Fonts/GeneralSans/general-sans.css";
 @import "./Styles/Variables.scss";
 @import "./Styles/Responsive.scss";
 @import "./Views/Hero.scss";
@@ -17,7 +17,7 @@ body {
   padding: 0;
   color: $text-color;
   background-color: $bg-color;
-  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'GeneralSans-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,18 +76,19 @@ h3 {
 }
 
 p {
-  @include xs { font-size: 3.7vmin; }
-  @include bigger(426px) { font-size: 16px; }
+  letter-spacing: 0.5px;
+
+  @include xs { font-size: 14px; }
+  @include lg { font-size: 16px; }
 }
 
-b {
-  font-weight: 600;
-}
+b { font-family: 'GeneralSans-Semibold'; }
 
 a {
   color: $accent-color;
-  font-weight: 500;
+  font-family: 'GeneralSans-Semibold';
   transition: all 0.3s ease;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
@@ -150,8 +151,7 @@ a {
 
   h3 {
     font-weight: 600;
-    color: $accent-color;
-    -webkit-text-stroke: 1px rgba($accent-color, 0.5);
+    color: rgba($text-color, 0.75);
     transition: all 0.3s ease; 
 
     @include xs { margin-bottom: 4px; }
@@ -160,15 +160,17 @@ a {
     &:hover {
       cursor: default;
       color: rgba($text-color, 0.85);
-      -webkit-text-stroke: 2px rgba($text-color, 0.25);
+      -webkit-text-stroke: 2px rgba($text-color, 0.15);
     }
   }
 }
 
 .button {
+  font-family: 'GeneralSans-Medium';
   display: flex;
   align-items: center;
   flex-direction: row;
+  color: $text-color;
   gap: 20px;
   width: fit-content;
   padding: 15px 35px;
@@ -187,4 +189,5 @@ a {
 .link-button {
   color: $text-color;
   text-decoration: none;
+  display: contents;
 }

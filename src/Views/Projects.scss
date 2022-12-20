@@ -29,13 +29,10 @@
         p {
             margin: 0px;
             word-spacing: 100vw;
+            font-family: 'GeneralSans-Semibold';
             text-transform: uppercase;
             text-align: center;
-            font-weight: 600;
-            letter-spacing: 2px;
-
-            @include lg { font-size: 1.3vw; }
-            @include xl { font-size: 1.4vmin; }
+            letter-spacing: 1px;
         }
     }
 
