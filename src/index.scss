@@ -57,24 +57,31 @@ h1, h2, h3, h4, h5 { font-family: 'Futura PT'; margin: 0; }
 
 h1 { 
   @include xs { font-size: 12.5vmin; }
-  @include sm { font-size: 7.5vw; }
+  @include sm { font-size: 8vw; }
+  @include md { font-size: 8.5vw; }
 }
 
 h2 {
   @include xs { font-size: 10vmin; }
-  @include sm { font-size: 6.5vw; }
-  @include md { font-size: 4.5vw; }
+  @include sm { font-size: 9vmin; }
+  @include md { font-size: 7vmin; }
+  @include lg { font-size: 6.5vmin; }
 }
 
 h3 {
   @include xs { font-size: 8vmin; }
-  @include sm { font-size: 5vw; }
-  @include md { font-size: 3vw; }
+  @include sm { font-size: 7vmin; }
+  @include md { font-size: 5vmin; }
+  @include lg { font-size: 4.5vmin; }
 }
 
 p {
   @include xs { font-size: 3.7vmin; }
   @include bigger(426px) { font-size: 16px; }
+}
+
+b {
+  font-weight: 600;
 }
 
 a {
@@ -109,19 +116,29 @@ a {
   
   @include xs { padding: 20px 30px; }
   @include sm {}
-  @include md {padding: 30px 40px; }
+  @include md {padding: 25px 40px; }
 }
 
 .section-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: fit-content;
+  align-items: center;
   border-bottom: 1px solid $grey-color;
   margin-bottom: 40px;
 
+  @include xs { gap: 20px; }
+  
+  @include sm {
+    margin-left: 0px;
+    padding-right: 40px;
+    gap: 60px;
+  }
+  
+  @include lg { margin-left: -40px; }
+
   h2 { 
-    font-weight: 300; 
+    font-weight: 600; 
     letter-spacing: 3px;
     transition: all 0.3s ease;
 
@@ -132,8 +149,9 @@ a {
   }
 
   h3 {
+    font-weight: 600;
     color: $accent-color;
-    -webkit-text-stroke: 0px $text-color;
+    -webkit-text-stroke: 1px rgba($accent-color, 0.5);
     transition: all 0.3s ease; 
 
     @include xs { margin-bottom: 4px; }
@@ -141,28 +159,9 @@ a {
 
     &:hover {
       cursor: default;
-      color: transparent;
-      -webkit-text-stroke: 2px $text-color;
+      color: rgba($text-color, 0.85);
+      -webkit-text-stroke: 2px rgba($text-color, 0.25);
     }
-  }
-
-  @include xs {
-    gap: 20px;
-    padding-right: 20px;
-  }
-  
-  @include sm {
-    margin-left: 0px;
-    padding-right: 40px;
-  }
-  
-  @include md {
-    gap: 60px;
-    
-  }
-  
-  @include lg {
-    margin-left: -40px;
   }
 }
 

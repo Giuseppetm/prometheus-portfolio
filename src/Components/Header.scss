@@ -75,7 +75,6 @@ header {
         }
 
         .sidebar-content {
-            font-family: 'Futura PT';
             display: flex;
             position: fixed;
             top: 0;
@@ -94,13 +93,20 @@ header {
             .menu-title {
                 font-family: 'Prompt';
                 padding: 0 0 15px 0;
-                color: rgba(0, 0, 0, .3);
+                color: rgba(0, 0, 0, .5);
                 font-size: 16px;
             }
 
             .menu-item {
                 padding: 4px 0;
                 font-size: 42px;
+                
+
+                a {
+                    font-family: 'Futura PT';
+                    font-weight: 600;
+                    letter-spacing: -1px;
+                }
             }
 
             a:hover {

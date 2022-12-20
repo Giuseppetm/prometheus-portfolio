@@ -6,7 +6,7 @@ const Projects = () => {
         <section className="projects" id="projects">
             <div className="section-header">
                 <h3>01</h3>
-                <h2 data-cursor-text="See my projects">PROJECTS</h2>
+                <h2 data-cursor-text="See my projects" className="outlined">PROJECTS</h2>
             </div>
 
             <Row gutterWidth={16}>

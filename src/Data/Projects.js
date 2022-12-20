@@ -48,7 +48,6 @@ const Projects = [
         url: null,
         repo: "https://github.com/Giuseppetm/Automated_Greenhouse",
     },
-    /*
     {
         img: "botanical_garden.png",
         title: 'Botanical Garden',
@@ -56,7 +55,6 @@ const Projects = [
         url: null,
         repo: "https://github.com/Giuseppetm/Botanical_Garden"
     }
-    */
 ];
 
 export default Projects;
