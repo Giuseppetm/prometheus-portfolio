@@ -16,6 +16,12 @@ header {
         right: 0px;
     }
 
+    .close-button {
+        border-radius: 100%;
+        padding: 15px;
+        background-color: rgb($text-secondary-color, 0.5);
+    }
+
     .content {
         display: flex;
         flex-direction: row;

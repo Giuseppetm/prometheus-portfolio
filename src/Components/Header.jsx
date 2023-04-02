@@ -37,7 +37,7 @@ const Header = () => {
 
             <div className="mobile">
                 <div className="content header-button">
-                    {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} /> }
+                    {!isSidebarOpen ? <MdSegment onClick={() => setIsSidebarOpen(true)} /> : <MdClose onClick={() => setIsSidebarOpen(false)} className="close-button" /> }
                 </div>
 
                 <div style={{ display: isSidebarOpen ? 'block' : 'none' }} className="sidebar">

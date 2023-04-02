@@ -3,10 +3,10 @@
 @import "./Fonts/GeneralSans/general-sans.css";
 @import "./Styles/Variables.scss";
 @import "./Styles/Responsive.scss";
-@import "./Views/Hero.scss";
-@import "./Views/Projects.scss";
-@import "./Views/Contact.scss";
-@import "./Views/Footer.scss";
+@import "./Sections/Hero.scss";
+@import "./Sections/Projects.scss";
+@import "./Sections/Contact.scss";
+@import "./Sections/Footer.scss";
 @import "./Components/Header.scss";
 @import "./Components/LateralMenu.scss";
 
@@ -53,10 +53,22 @@ section {
   @include md { display: block; }
 }
 
-h1, h2, h3, h4, h5 { font-family: 'Futura PT'; margin: 0; }
+h1, h2, h3, h4, h5 { 
+  margin: 0px;
+
+  @include xs {
+    font-family: 'Futura PT Extra';
+    letter-spacing: 3px;
+  }
+
+  @include md {
+    font-family: 'Futura PT';
+    letter-spacing: 5px;
+  }
+}
 
 h1 { 
-  @include xs { font-size: 12.5vmin; }
+  @include xs { font-size: 14.5vmin; }
   @include sm { font-size: 8vw; }
   @include md { font-size: 8.5vw; }
 }
@@ -69,8 +81,8 @@ h2 {
 }
 
 h3 {
-  @include xs { font-size: 8vmin; }
-  @include sm { font-size: 7vmin; }
+  @include xs { font-size: 7vmin; }
+  @include sm { font-size: 6vmin; }
   @include md { font-size: 5vmin; }
   @include lg { font-size: 4.5vmin; }
 }
@@ -128,15 +140,18 @@ a {
   border-bottom: 1px solid $grey-color;
   margin-bottom: 40px;
 
-  @include xs { gap: 20px; }
+  @include xs { gap: 10px; }
   
   @include sm {
     margin-left: 0px;
     padding-right: 40px;
-    gap: 60px;
+    gap: 40px;
   }
   
-  @include lg { margin-left: -40px; }
+  @include lg { 
+    gap: 60px;
+    margin-left: -40px; 
+  }
 
   h2 { 
     font-weight: 600; 
@@ -151,7 +166,8 @@ a {
 
   h3 {
     font-weight: 600;
-    color: rgba($text-color, 0.75);
+    letter-spacing: 0px;
+    color: rgba($text-color, 0.45);
     transition: all 0.3s ease; 
 
     @include xs { margin-bottom: 4px; }
@@ -159,8 +175,8 @@ a {
 
     &:hover {
       cursor: default;
-      color: rgba($text-color, 0.85);
-      -webkit-text-stroke: 2px rgba($text-color, 0.15);
+      color: rgba($accent-color, 0.85);
+      -webkit-text-stroke: 2px rgb($text-color, 0.5);
     }
   }
 }
