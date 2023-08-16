@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const withVideos = require('next-videos');
 
+module.exports = {
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+}
+
 module.exports = withVideos({
   webpack(config) {
     config.module.rules.push({
