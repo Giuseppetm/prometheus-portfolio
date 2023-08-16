@@ -20,5 +20,6 @@ module.exports = withVideos({
   },
   images: {
     unoptimized: true
-  }
+  },
+  distDir: '.next'
 });
