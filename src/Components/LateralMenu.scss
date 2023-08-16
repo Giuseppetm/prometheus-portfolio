@@ -25,7 +25,7 @@
         height: 16px;
         border: 1px solid $text-color;
         background-color: transparent;
-        transition: all 0.2s ease;
+        transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 
         &:hover {

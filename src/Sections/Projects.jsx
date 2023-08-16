@@ -1,5 +1,7 @@
-import { Row, Col } from 'react-flexbox-grid';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import ProjectsData from '../Data/Projects';
+import Image from 'next/image';
 
 const Projects = () => {
     return (
@@ -9,13 +11,14 @@ const Projects = () => {
                 <h2 data-cursor-text="See my projects" className="outlined">PROJECTS</h2>
             </div>
 
-            <Row gutterWidth={16}>
+            <Row>
                 {
                     ProjectsData.map((x,i) => {
                         return (
-                            <Col xs={12} sm={6} md={6} lg={3} key={i}>
+                            <Col xs={12} sm={6} md={6} lg={4} key={i}>
                                 <a href={x.url ?? x.repo}>
-                                    <div className="project" key={i} data-cursor-img={require(`../Images/${x.img}`)}>
+                                    <div className="project">
+                                        <Image className="project-image" src={`/Images/${x.img}`} alt={x.title} width={1280} height={720} />
                                         <p>{x.title}</p>
                                     </div>
                                 </a>

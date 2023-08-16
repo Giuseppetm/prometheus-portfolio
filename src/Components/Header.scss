@@ -35,7 +35,7 @@ header {
         letter-spacing: 1px;
         font-weight: 600;
         color: rgba($text-color, .9);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease;
         text-decoration: none;
 
         &:hover {
@@ -65,6 +65,7 @@ header {
     }
 
     svg {
+        box-sizing: unset;
         width: 1.4rem;
         height: 1.4rem;
     }

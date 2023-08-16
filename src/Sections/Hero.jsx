@@ -6,10 +6,10 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="content">
-                <h1 className="outlined" data-cursor-video={require("../Images/clip.mp4")}>GIUSEPPE <br className="show-br"/>DEL CAMPO</h1>
+                <h1 className="outlined" data-cursor-video={`/Images/clip.mp4`}>GIUSEPPE <br className="show-br"/>DEL CAMPO</h1>
 
                 <div className="box">
-                    <p>I'm a {calculateAge(new Date(1999, 11, 10))} years old <b>Front-end Developer</b>, currently working at <a href="https://www.peoplelab.it/">People Lab SRL</a> as <b>IT Consultant</b>.</p>
+                    <p>I&apos;m a {calculateAge(new Date(1999, 11, 10))} years old <b>Front-end Developer</b>, currently working at <a href="https://www.peoplelab.it/">People Lab SRL</a> as <b>IT Consultant</b>.</p>
 
                     <p>
                         I studied computer science at the University of Milan,where I later worked on a H2020 European project called <a href="https://cordis.europa.eu/project/id/857172/it">Smart Bear</a>. <br/>

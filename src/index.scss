@@ -1,6 +1,4 @@
 @import "../node_modules/mouse-follower/src/scss/index.scss";
-@import "./Fonts/Futura/stylesheet.css";
-@import "./Fonts/GeneralSans/general-sans.css";
 @import "./Styles/Variables.scss";
 @import "./Styles/Responsive.scss";
 @import "./Sections/Hero.scss";
@@ -54,15 +52,15 @@ section {
 }
 
 h1, h2, h3, h4, h5 { 
+  font-weight: 600;
   margin: 0px;
+  font-family: 'Futura PT';
 
   @include xs {
-    font-family: 'Futura PT Extra';
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   @include md {
-    font-family: 'Futura PT';
     letter-spacing: 5px;
   }
 }
@@ -99,7 +97,7 @@ b { font-family: 'GeneralSans-Semibold'; }
 a {
   color: $accent-color;
   font-family: 'GeneralSans-Semibold';
-  transition: all 0.3s ease;
+  transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
   text-decoration: none;
 
   &:hover {
@@ -113,7 +111,7 @@ a {
   color: transparent;
   text-shadow: none;
   -webkit-text-stroke: 2px $text-color;
-  transition: 0.3s ease; 
+  transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
 
   &:hover {
     cursor: pointer;
@@ -156,7 +154,7 @@ a {
   h2 { 
     font-weight: 600; 
     letter-spacing: 3px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
 
     &:hover {
       cursor: default;
@@ -168,7 +166,7 @@ a {
     font-weight: 600;
     letter-spacing: 0px;
     color: rgba($text-color, 0.45);
-    transition: all 0.3s ease; 
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
 
     @include xs { margin-bottom: 4px; }
     @include md { margin-bottom: 10px; }
@@ -191,7 +189,7 @@ a {
   width: fit-content;
   padding: 15px 35px;
   border: 1px solid $grey-color;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   border-radius: 1px;
 

@@ -1,18 +1,19 @@
 const Projects = [
     {
-        img: "studenti_unimi.png",
+        img: "studenti-unimi.png",
         title: "Studenti UniMi",
         info: "Website for the largest university network of Milan.",
         url: "https://studentiunimi.it/",
         repo: "https://github.com/StudentiUnimi/website"
     },
     {
-        img: "syndrome_main_computer.png",
+        img: "kronos.png",
         title: "Kronos Unveiled",
         info: 'Reproduction from "The Incredibles" movie (2004).',
         url: "https://syndromemaincomputer.netlify.app/",
         repo: "https://github.com/Giuseppetm/syndrome_main_computer"
     },
+    /*
     {
         img: "prometheus.png",
         title: "Prometheus template",
@@ -55,6 +56,7 @@ const Projects = [
         url: null,
         repo: "https://github.com/Giuseppetm/Botanical_Garden"
     }
+    */
 ];
 
 export default Projects;
