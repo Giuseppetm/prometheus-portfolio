@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const withVideos = require('next-videos');
 
-module.exports = {
-    images: {
-        unoptimized: true
-    }
-};
-
 module.exports = withVideos({
   webpack(config) {
     config.module.rules.push({
@@ -24,4 +18,7 @@ module.exports = withVideos({
 
     return config;
   },
+  images: {
+    unoptimized: true
+  }
 });
