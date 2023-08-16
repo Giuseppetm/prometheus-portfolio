@@ -17,8 +17,5 @@ module.exports = withVideos({
     });
 
     return config;
-  },
-  images: {
-    unoptimized: true
   }
 });
