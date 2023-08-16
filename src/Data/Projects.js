@@ -13,14 +13,14 @@ const Projects = [
         url: "https://syndromemaincomputer.netlify.app/",
         repo: "https://github.com/Giuseppetm/syndrome_main_computer"
     },
-    /*
     {
-        img: "prometheus.png",
-        title: "Prometheus template",
+        img: "prometheus-portfolio.png",
+        title: "Prometheus Portfolio",
         info: '',
         url: "https://giuseppedelcampo.netlify.app/",
         repo: "https://github.com/Giuseppetm/prometheus-portfolio"
     },
+    /*
     {
         img: "elegalio.png",
         title: "Elegalio Template",
