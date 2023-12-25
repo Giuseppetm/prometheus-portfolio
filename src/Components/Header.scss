@@ -31,7 +31,7 @@ header {
     }
 
     .site-name {
-        font-family: 'GeneralSans-Medium';
+        font-family: var(--GeneralSans-Medium);
         letter-spacing: 1px;
         font-weight: 600;
         color: rgba($text-color, .9);
@@ -99,7 +99,7 @@ header {
             }
 
             .menu-title {
-                font-family: 'GeneralSans-Medium';
+                font-family: var(--GeneralSans-Medium);
                 padding: 0 0 15px 0;
                 color: rgba($text-color, .5);
                 font-size: 16px;
@@ -110,7 +110,7 @@ header {
                 font-size: 42px;
 
                 a {
-                    font-family: 'GeneralSans-Medium';
+                    font-family: var(--GeneralSans-Medium);
                     letter-spacing: -1px;
                 }
             }

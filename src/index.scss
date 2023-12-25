@@ -15,7 +15,7 @@ body {
   padding: 0;
   color: $text-color;
   background-color: $bg-color;
-  font-family: 'GeneralSans-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: var(--GeneralSans-Regular), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,9 +52,9 @@ section {
 }
 
 h1, h2, h3, h4, h5 { 
+  font-family: var(--FuturaPT-Bold);
   font-weight: 600;
   margin: 0px;
-  font-family: 'Futura PT';
 
   @include xs {
     letter-spacing: 1px;
@@ -92,11 +92,12 @@ p {
   @include lg { font-size: 16px; }
 }
 
-b { font-family: 'GeneralSans-Semibold'; }
+b { font-family: var(--GeneralSans-Semibold); }
 
 a {
   color: $accent-color;
-  font-family: 'GeneralSans-Semibold';
+  font-family: var(--GeneralSans-Semibold);
+  font-weight: 700;
   transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
   text-decoration: none;
 
@@ -180,7 +181,8 @@ a {
 }
 
 .button {
-  font-family: 'GeneralSans-Medium';
+  font-family: var(--GeneralSans-Medium);
+  font-weight: 500;
   display: flex;
   align-items: center;
   flex-direction: row;

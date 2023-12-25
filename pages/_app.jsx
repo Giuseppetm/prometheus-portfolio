@@ -1,8 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import "../src/Fonts/Futura/stylesheet.css";
-import "../src/Fonts/GeneralSans/general-sans.css";
-import '../src/index.scss';
+
 import Head from "next/head";
+import 'bootstrap/dist/css/bootstrap.css';
+import fonts from "@/Utils/fonts";
+import '../src/index.scss';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }) => {
         <meta name="author" content="Giuseppe Del Campo" />
         <link rel="icon" href="logo.png" />
       </Head>
-      <main>
+      <main className={fonts.className}>
         <Component {...pageProps} />
       </main>
     </>
