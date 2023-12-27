@@ -44,9 +44,9 @@ const App = () => {
             <NextSeo
                 title={`GIUSEPPE DEL CAMPO | ${calculateAge('10-11-1999')} Years Old IT Consultant`}
                 description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old IT Consultant), based on Prometheus Portfolio.`}
-                canonical={"https://studentiunimi.it/"}
+                canonical={"prometheusportfolio.netlify.app"}
                 openGraph={{
-                    url: "https://studentiunimi.it/",
+                    url: "prometheusportfolio.netlify.app",
                     title: `GIUSEPPE DEL CAMPO | ${calculateAge('10-11-1999')} Years Old IT Consultant`,
                     description: `Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old IT Consultant), based on Prometheus Portfolio.`,
                     site_name: `GIUSEPPE DEL CAMPO | ${calculateAge('10-11-1999')} Years Old IT Consultant`,
